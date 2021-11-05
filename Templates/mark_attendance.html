@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance</title>
+</head>
+<style>  body{
+   text-align: center;
+  }
+</style>
+<body>
+ <h1> Attendance Portal </h1>
+
+<form action = "/mark_attendance" method="POST">
+
+ <table align="center"  cellpadding = "13" border = "10" width="700">
+
+  <tr><td>Date</td><td><input type="Date" name="Date"></td></tr>
+     <tr><td>Branch</td><td>
+        <label><input type="radio" value="IT" name="Branch">IT</label>
+        <label><input type="radio" value="COMPS" name="Branch">COMPS</label>
+        <label><input type="radio" value="MECH" name="Branch">MECH</label>
+        <label><input type="radio" value="EXTC" name="Branch">EXTC</label>
+      </td></tr>
+
+          <tr><td>Eng_Year</td><td>
+        <label><input type="radio" value="1" name="Eng_Year">FY</label>
+        <label><input type="radio" value="2" name="Eng_Year">SY</label>
+        <label><input type="radio" value="3" name="Eng_Year">TY</label>
+        <label><input type="radio" value="4" name="Eng_Year">FoY</label>
+      </td></tr>
+    <tr><td>Roll_No(1 to 60)</td><td><input type="text" name="Roll_No" size="2" maxlength="2"></td></tr>
+  <tr><td>Subjects</td><td><input type="text" name="Subjects" size="6" maxlength="5"></td></tr>
+     <tr><td>Attendance</td><td>
+         <label><input type="radio" value="1" name="Attendance">P</label>
+        <label><input type="radio" value="0" name="Attendance">AB</label>
+
+
+      </td></tr>
+        <tr><td><input type="Submit" value="Submit"></td></tr>
+ </table>
+ </form>
+</body>
+</html>
